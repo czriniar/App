@@ -35,7 +35,7 @@ def home():
             player_name = match.group(2)
             team_abbreviation = match.group(3)
             points = match.group(4)
-            result += f"<tr><td>{match.group(1)}.</td><td>{player_name}{team_abbreviation}</td><td>{points}</td></tr>"
+            result += f"<tr><td>{match.group(1)}.</td><td>{player_name}</td><td>{team_abbreviation}</td><td>{points}</td></tr>"
 
     result += "</table>"
     return result
